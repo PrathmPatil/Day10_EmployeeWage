@@ -4,10 +4,10 @@ public class Main {
 
 	public static void main(String[] args) 
 	{ int a;
-	int b = 0;
+	  int b = 0;
 		EmployeWage empWage=new EmployeWage();
 		/*
-		 * use for lop as a 20 working days wage calculation
+		 * use for lop as a 30 working days wage calculation
 		 */
 		for(int i=0;i<30;i++)
 		{
