@@ -4,16 +4,15 @@ import java.util.Random;
 
 public class EmployeWage 
 {
- int randomNumber()
+ int rNum()
  {
 	 Random random=new Random();
 	 int number=random.nextInt(2);
 	 return number;
- }
- 
- int calculateWage(int rNo)
+ } 
+ int calWage(int rNo)
  {
-	 if(rNo==0)
+	 if(rNo==1)
 	 {
 		 int wage=20*8;
 		 return wage;
@@ -25,15 +24,15 @@ public class EmployeWage
  }
  void display(int rNo,int wage)
  {
-	 if(rNo==0)
+	 if(rNo==1)
 	 {
-		 System.out.println("Employee is Present");
+		 System.out.println("Employe work on part time");
 		 System.out.println("Total wage is "+wage);
 		
 	 }
 	 else
 	 {
-		 System.out.println("Employee is Absent");
+		 System.out.println("Employee not work as a part time");
 		 System.out.println("Total wage is "+wage);
 		
 	 }

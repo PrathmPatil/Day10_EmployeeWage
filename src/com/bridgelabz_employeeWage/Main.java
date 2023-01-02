@@ -4,13 +4,13 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		EmployeWage employewage=new EmployeWage();
+		EmployeWage empWage=new EmployeWage();
 		/*
 		 * hold the value and print the value
 		 */
-		int a=employewage.randomNumber();
-		int b=employewage.calculateWage(employewage.randomNumber());
-		employewage.display(a,b);
+		int a=empWage.rNum();
+		int b=empWage.calWage(a);
+		empWage.display(a,b);
 	}
 
 }
