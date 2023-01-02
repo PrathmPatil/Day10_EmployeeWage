@@ -9,7 +9,7 @@ public class Main {
 		/*
 		 * use for lop as a 20 working days wage calculation
 		 */
-		for(int i=0;i<10;i++)
+		for(int i=0;i<30;i++)
 		{
 			a=empWage.rNum();
 			b=empWage.calWage(a);

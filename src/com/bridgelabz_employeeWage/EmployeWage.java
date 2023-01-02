@@ -25,7 +25,17 @@ public class EmployeWage
 	
  }
  void display(int sum)
- {
-	 System.out.println("Total wage of Working Days is "+sum);
+ {    
+	 if((sum/160)>20)
+	 {
+		 System.out.println("Total Working Days is "+sum/160);
+		 System.out.println("Total wage of Working Days is "+sum);
+	 }
+	 else
+	 {
+		 System.out.println("20 Days are not reached in month ");
+		 System.out.println("Total wage of Working Days is "+sum);
+	 }
+	 
  }
  }
