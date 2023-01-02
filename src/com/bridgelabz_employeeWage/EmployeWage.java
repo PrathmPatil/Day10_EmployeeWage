@@ -10,31 +10,34 @@ public class EmployeWage
 	 int number=random.nextInt(2);
 	 return number;
  } 
- int calWage(int rNo)
+ void calWage(int rNo)
  {
-	 if(rNo==1)
+	 
+	 switch(rNo)
 	 {
+	 case 0: 
 		 int wage=20*8;
-		 return wage;
+		 System.out.println("Total wage is "+wage);
+		 break;
+	
+	 case 1:
+		 System.out.println("Total wage is 0");
+        break;		
 	 }
-	 else
-	 {
-		 return 0;
-	 }
+	
  }
- void display(int rNo,int wage)
+ void display(int rNo)
  {
-	 if(rNo==1)
+	 switch(rNo)
 	 {
+	 case 0: 
+		 int wage=20*8;
 		 System.out.println("Employe work on part time");
-		 System.out.println("Total wage is "+wage);
-		
-	 }
-	 else
-	 {
+		 break;
+	
+	 case 1:
 		 System.out.println("Employee not work as a part time");
-		 System.out.println("Total wage is "+wage);
-		
+        break;		
 	 }
  }
  

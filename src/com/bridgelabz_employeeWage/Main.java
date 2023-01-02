@@ -9,8 +9,8 @@ public class Main {
 		 * hold the value and print the value
 		 */
 		int a=empWage.rNum();
-		int b=empWage.calWage(a);
-		empWage.display(a,b);
+		empWage.calWage(a);
+		empWage.display(a);
 	}
 
 }
