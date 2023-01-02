@@ -10,15 +10,34 @@ public class EmployeWage
 	 int number=random.nextInt(2);
 	 return number;
  }
- void display(int rNo)
+ 
+ int calculateWage(int rNo)
+ {
+	 if(rNo==0)
+	 {
+		 int wage=20*8;
+		 return wage;
+	 }
+	 else
+	 {
+		 return 0;
+	 }
+ }
+ void display(int rNo,int wage)
  {
 	 if(rNo==0)
 	 {
 		 System.out.println("Employee is Present");
+		 System.out.println("Total wage is "+wage);
+		
 	 }
 	 else
 	 {
 		 System.out.println("Employee is Absent");
+		 System.out.println("Total wage is "+wage);
+		
 	 }
  }
+ 
+ 
 }
