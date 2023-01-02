@@ -4,42 +4,28 @@ import java.util.Random;
 
 public class EmployeWage 
 {
+	int sum=0;
  int rNum()
  {
 	 Random random=new Random();
-	 int number=random.nextInt(2);
-	 return number;
+		 int number=random.nextInt(2);
+		 return number;	 
  } 
- void calWage(int rNo)
+ int calWage(int rNo)
  {
-	 
-	 switch(rNo)
-	 {
-	 case 0: 
-		 int wage=20*8;
-		 System.out.println("Total wage is "+wage);
-		 break;
-	
-	 case 1:
-		 System.out.println("Total wage is 0");
-        break;		
-	 }
+	if(rNo==0)
+	{
+		return sum;
+	}
+	else
+	{
+		sum=20*8+sum;
+		return sum;
+	}
 	
  }
- void display(int rNo)
+ void display(int sum)
  {
-	 switch(rNo)
-	 {
-	 case 0: 
-		 int wage=20*8;
-		 System.out.println("Employe work on part time");
-		 break;
-	
-	 case 1:
-		 System.out.println("Employee not work as a part time");
-        break;		
-	 }
+	 System.out.println("Total wage of Working Days is "+sum);
  }
- 
- 
-}
+ }
