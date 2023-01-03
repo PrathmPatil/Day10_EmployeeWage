@@ -12,6 +12,7 @@ class Input
 }
  class EmployeWage
  { int sum;
+   int wdays;
 	 int tWage(int wags, int present)
 	 {
 		sum=(wags*8*present);
@@ -23,9 +24,10 @@ class Input
 		 int random=r.nextInt(2);
 		 return random;
 	 }
-	 void display(int a)
+	 void display(int a,int wage)
 	 {
 		 System.out.println("Total wage is "+a);
+		 System.out.println("Total working days "+a/(wage*8));
 		 System.out.println();
 	 }
  }

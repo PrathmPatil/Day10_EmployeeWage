@@ -33,7 +33,7 @@ public class Main {
 	   Input in=new Input();
 	   in.inPut(comName);
 	   EmployeWage ew1=new EmployeWage();
-	   ew1.display(b);
+	   ew1.display(b,wage);
 		}
 	  	}
 
