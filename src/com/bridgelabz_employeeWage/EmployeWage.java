@@ -1,34 +1,32 @@
 package com.bridgelabz_employeeWage;
 
 import java.util.Random;
+import java.util.Scanner;
 
-public class EmployeWage 
+class Input
 {
-	int sum=0;
-	int number;
- int rNum()
- {
-	 Random random=new Random();
-		number =random.nextInt(2);
-		 return number;	 
- } 
- int calWage(int rNo)
- {
-	if(rNo==0)
-	{
-		return sum;
+	void inPut(String comName)
+	{  
+		System.out.println("The Company name is "+ comName);
 	}
-	else
-	{
-		sum=20*8+sum;
+}
+ class EmployeWage
+ { int sum;
+	 int tWage(int wags, int present)
+	 {
+		sum=(wags*8*present);
 		return sum;
-	}
-	
+	 }
+	 int ranValue()
+	 {
+		 Random r= new Random();
+		 int random=r.nextInt(2);
+		 return random;
+	 }
+	 void display(int a)
+	 {
+		 System.out.println("Total wage is "+a);
+		 System.out.println();
+	 }
  }
- void display(int sum)
- {    
-	
-		 System.out.println("Total Working Days is "+sum/160);
-		 System.out.println("Total wage of Working Days is "+sum);
- }
- }
+ 
