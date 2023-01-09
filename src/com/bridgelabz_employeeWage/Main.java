@@ -3,38 +3,27 @@ package com.bridgelabz_employeeWage;
 import java.util.Scanner;
 
 public class Main {
+static int nEntries=0;
 
+static int employeeId=1;
 	public static void main(String[] args) 
-	{ 
-		String comName;
-		int wage; 
-		int wDays;
-		int sum = 0;
-		int b = 0;
+	{  			
 		
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Enter How namy companire You have enter");
-		int noCom=sc.nextInt();
-		for(int a=0;a<noCom;a++) {
-	    System.out.println("Enter Company Name is ");
-	    comName=sc.next();
-	    System.out.println("Enter Wage per Hour ");
-	    wage=sc.nextInt();
-	    System.out.println("Enter Days of Working ");
-	    wDays=sc.nextInt();
-	
-	  
-	   for(int i=0;i<wDays;i++)
-	   {
-		   EmployeWage ew=new EmployeWage();
-		   int c=ew.ranValue();  //random value
-		   b=b+ew.tWage(wage, c); //calculate wage
-	   }
-	   Input in=new Input();
-	   in.inPut(comName);
-	   EmployeWage ew1=new EmployeWage();
-	   ew1.display(b,wage);
-		}
-	  	}
+	    CompanyWage cw1=new CompanyWage("a",10);
+	    CompanyWage cw2=new CompanyWage("b",30);
+	    CompanyWage cw3=new CompanyWage("c",40);
+	    CompanyWage cw4=new CompanyWage("d",50);
+	    
+	    CompanyWage[] cw=new CompanyWage[4];
+	    cw[0]=cw1;
+	    cw[1]=cw2;
+	    cw[2]=cw3;
+	    cw[3]=cw4;
+	    
+	    EmployeWage ew= new EmployeWage(1,cw);
+       ew.printInfo();
+	    
+	    
+	 }
 
 }
